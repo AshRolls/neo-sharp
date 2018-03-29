@@ -1,8 +1,9 @@
 ﻿using Microsoft.Extensions.Logging;
+using NeoSharp.Core.Network;
 using System.Net;
 using System.Net.Sockets;
 
-namespace NeoSharp.Core.Network
+namespace NeoSharp.Network
 {
     public class Peer : IPeer
     {

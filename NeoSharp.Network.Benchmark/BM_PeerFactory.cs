@@ -15,7 +15,7 @@ namespace NeoSharp.Network.Benchmark
         [GlobalSetup]
         public void Setup()
         {
-            Container cont = new Container();
+            Container cont = new Container();            
             cont.Register<IPeer, Peer>(Lifestyle.Transient);
             cont.Register(ConfigureLogger, Lifestyle.Singleton);
             cont.Register(typeof(ILogger<>), typeof(LoggerAdapter<>));

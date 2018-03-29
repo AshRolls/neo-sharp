@@ -1,10 +1,11 @@
 ﻿using Microsoft.Extensions.Logging;
+using NeoSharp.Core.Network;
 using NeoSharp.Core.Network.Factories;
 using System;
 using System.Collections.Generic;
 using System.Net;
 
-namespace NeoSharp.Core.Network
+namespace NeoSharp.Network
 {
     public class Server : IServer
     {

@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using NeoSharp.Core.Config;
 using NeoSharp.Core.Network;
 using NeoSharp.Core.Network.Factories;
+using NeoSharp.Network;
 
 namespace NeoSharp.Application
 {

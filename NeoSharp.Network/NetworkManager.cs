@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
+using NeoSharp.Core.Network;
 
-namespace NeoSharp.Core.Network
+namespace NeoSharp.Network
 {
     public class NetworkManager : INetworkManager
     {
