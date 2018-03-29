@@ -1,10 +1,10 @@
 ﻿using BenchmarkDotNet.Attributes;
 using NeoSharp.Core.Network;
-using NeoSharp.Core.Network.DI;
-using NeoSharp.Core.DI;
 using SimpleInjector;
 using Moq;
 using Microsoft.Extensions.Logging;
+using NeoSharp.Core.Network.Factories;
+using NeoSharp.Application;
 
 namespace NeoSharp.Network.Benchmark
 {       

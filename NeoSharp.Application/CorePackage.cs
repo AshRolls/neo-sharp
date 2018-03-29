@@ -3,7 +3,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using NLog.Extensions.Logging;
 
-namespace NeoSharp.Core.DI
+namespace NeoSharp.Application
 {
     public static class CorePackage
     {

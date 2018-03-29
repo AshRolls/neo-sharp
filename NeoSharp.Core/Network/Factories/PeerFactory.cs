@@ -1,6 +1,6 @@
 ﻿using SimpleInjector;
 
-namespace NeoSharp.Core.Network.DI
+namespace NeoSharp.Core.Network.Factories
 {
     public class PeerFactory : IPeerFactory
     {

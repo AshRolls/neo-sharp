@@ -1,8 +1,10 @@
 ﻿using SimpleInjector;
 using Microsoft.Extensions.Configuration;
 using NeoSharp.Core.Config;
+using NeoSharp.Core.Network;
+using NeoSharp.Core.Network.Factories;
 
-namespace NeoSharp.Core.Network.DI
+namespace NeoSharp.Application
 {
     public static class NetworkPackage
     {

@@ -1,6 +1,7 @@
-﻿using SimpleInjector;
+﻿using NeoSharp.Client;
+using SimpleInjector;
 
-namespace NeoSharp.Client.DI
+namespace NeoSharp.Application
 {
     public static class ClientPackage
     {

@@ -1,7 +1,4 @@
-﻿using NeoSharp.Client.DI;
-using NeoSharp.Core.DI;
-using NeoSharp.Core.Network.DI;
-using SimpleInjector;
+﻿using SimpleInjector;
 
 namespace NeoSharp.Application
 {

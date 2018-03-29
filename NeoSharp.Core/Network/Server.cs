@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
-using NeoSharp.Core.Network.DI;
+using NeoSharp.Core.Network.Factories;
 using System;
 using System.Collections.Generic;
 using System.Net;

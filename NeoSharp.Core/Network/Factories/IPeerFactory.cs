@@ -1,4 +1,4 @@
-﻿namespace NeoSharp.Core.Network.DI
+﻿namespace NeoSharp.Core.Network.Factories
 {
     public interface IPeerFactory
     {
