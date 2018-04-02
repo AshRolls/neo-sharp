@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2024
+VisualStudioVersion = 15.0.26730.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeoSharp.Client", "NeoSharp.Client\NeoSharp.Client.csproj", "{63C3C4D8-4E58-419B-AC78-A492AF322131}"
 EndProject
@@ -14,6 +14,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeoSharp.Core.Benchmark", "NeoSharp.Core.Benchmark\NeoSharp.Core.Benchmark.csproj", "{6BD620E7-1321-4B85-8B0C-CA00A9076D39}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeoSharp.Core.Test", "NeoSharp.Core.Test\NeoSharp.Core.Test.csproj", "{95F83280-0113-4E1F-8FFA-48B9749129CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeoSharp.Logging.NLog", "NeoSharp.Infrastructure.Logging.NLog\NeoSharp.Logging.NLog.csproj", "{D68C8938-EFCA-4B6A-9D01-3FC3DE749EB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeoSharp.Persistence.CosmosDB", "NeoSharp.Database.CosmosDB\NeoSharp.Persistence.CosmosDB.csproj", "{6CD90B02-8B68-4638-8893-E09BB2B02644}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeoSharp.Persistence.RocksDB", "NeoSharp.Persitence.RocksDB\NeoSharp.Persistence.RocksDB.csproj", "{390C923B-0209-4E0F-8751-C84BC0C0FB76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +51,18 @@ Global
 		{95F83280-0113-4E1F-8FFA-48B9749129CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95F83280-0113-4E1F-8FFA-48B9749129CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95F83280-0113-4E1F-8FFA-48B9749129CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D68C8938-EFCA-4B6A-9D01-3FC3DE749EB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D68C8938-EFCA-4B6A-9D01-3FC3DE749EB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D68C8938-EFCA-4B6A-9D01-3FC3DE749EB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D68C8938-EFCA-4B6A-9D01-3FC3DE749EB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CD90B02-8B68-4638-8893-E09BB2B02644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD90B02-8B68-4638-8893-E09BB2B02644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD90B02-8B68-4638-8893-E09BB2B02644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD90B02-8B68-4638-8893-E09BB2B02644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{390C923B-0209-4E0F-8751-C84BC0C0FB76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{390C923B-0209-4E0F-8751-C84BC0C0FB76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{390C923B-0209-4E0F-8751-C84BC0C0FB76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{390C923B-0209-4E0F-8751-C84BC0C0FB76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

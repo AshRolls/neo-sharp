@@ -1,4 +1,4 @@
-﻿namespace NeoSharp.Core.Database
+﻿namespace NeoSharp.Core.Persistence
 {
     public interface IRepository
     {

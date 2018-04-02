@@ -1,8 +1,9 @@
 ﻿using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
+using NeoSharp.Core.Network;
 
-namespace NeoSharp.Core.Network.Test
+namespace NeoSharp.Core.Test.Network
 {
     [TestClass]
     public class UT_NetworkManager

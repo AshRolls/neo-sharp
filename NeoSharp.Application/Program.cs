@@ -7,8 +7,7 @@ namespace NeoSharp.Application
     {
         static void Main(string[] args)
         {
-            Container container;
-            Composition.Compose(out container);            
+            Composition.Compose(out var container);            
 
             IClientManager client = container.GetInstance<IClientManager>();
             client.RunClient(args);

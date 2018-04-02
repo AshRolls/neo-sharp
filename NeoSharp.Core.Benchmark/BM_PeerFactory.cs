@@ -1,16 +1,16 @@
-﻿using BenchmarkDotNet.Attributes;
-using NeoSharp.Core.Network;
-using NeoSharp.Core.Network.DI;
-using NeoSharp.Core.DI;
-using SimpleInjector;
-using Moq;
+﻿using System;
+using BenchmarkDotNet.Attributes;
 using Microsoft.Extensions.Logging;
+using Moq;
+using NeoSharp.Core.Logging;
+using NeoSharp.Core.Network;
+using SimpleInjector;
 
-namespace NeoSharp.Network.Benchmark
+namespace NeoSharp.Core.Benchmark
 {       
     public class BM_PeerFactory
     {
-        PeerFactory uub;
+        Func<IPeer> uub;
 
         [GlobalSetup]
         public void Setup()
@@ -19,7 +19,7 @@ namespace NeoSharp.Network.Benchmark
             cont.Register<IPeer, Peer>(Lifestyle.Transient);
             cont.Register(ConfigureLogger, Lifestyle.Singleton);
             cont.Register(typeof(ILogger<>), typeof(LoggerAdapter<>));
-            uub = new PeerFactory(cont);
+            uub = () => cont.GetInstance<IPeer>();
         }
 
         private static ILoggerFactory ConfigureLogger()
@@ -32,7 +32,7 @@ namespace NeoSharp.Network.Benchmark
         public void createPeers()
         {
             for (int i=0; i<10000; i++)
-                uub.Create();
+                uub();
         }
 
     }

@@ -1,30 +1,8 @@
-﻿using SimpleInjector;
+﻿using System;
 using Microsoft.Extensions.Logging;
-using System;
-using NLog.Extensions.Logging;
 
-namespace NeoSharp.Core.DI
+namespace NeoSharp.Core.Logging
 {
-    public static class CorePackage
-    {
-        public static void RegisterServices(Container container)
-        {
-            // logger
-            container.Register(ConfigureLogger, Lifestyle.Singleton);
-            container.Register(typeof(ILogger<>), typeof(LoggerAdapter<>), Lifestyle.Singleton);
-        }
-
-        private static ILoggerFactory ConfigureLogger()
-        {
-            ILoggerFactory loggerFactory = new LoggerFactory();
-
-            loggerFactory.AddNLog(new NLogProviderOptions { CaptureMessageTemplates = true, CaptureMessageProperties = true });
-            NLog.LogManager.LoadConfiguration("nlog.config");                  
-
-            return loggerFactory;
-        }        
-    }
-
     /// <summary>
     ///  This Adapter class allows us to use Simple Injector with Microsoft.Extensions.Logging and ILogger<T>
     /// </summary>
@@ -52,5 +30,4 @@ namespace NeoSharp.Core.DI
             _logger.Log(logLevel, eventId, state, exception, formatter);
         }
     }
-
 }

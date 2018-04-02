@@ -1,8 +1,8 @@
-﻿using BenchmarkDotNet.Reports;
+﻿using System;
+using BenchmarkDotNet.Reports;
 using BenchmarkDotNet.Running;
-using System;
 
-namespace NeoSharp.Network.Benchmark
+namespace NeoSharp.Core.Benchmark
 {
     class Program
     {

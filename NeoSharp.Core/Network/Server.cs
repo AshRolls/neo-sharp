@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.Logging;
-using NeoSharp.Core.Network.DI;
 using System;
 using System.Collections.Generic;
 using System.Net;
@@ -10,13 +9,13 @@ namespace NeoSharp.Core.Network
     {
         private readonly ILogger<Server> _logger;
         private readonly NetworkConfig _cfg;
-        private readonly IPeerFactory _peerFactory;
+        private readonly Func<IPeer> _peerFactory;
         
         private IList<IPeer> _connectedPeers;                // if we successfully connect with a peer it is inserted into this list
         private IList<IPEndPoint> _failedPeers;             // if we can't connect to a peer it is inserted into this list
         private uint _nonce;                                // uniquely identifies this server so we can filter out our own messages sent back to us by other nodes
 
-        public Server(ILoggerFactory loggerFactory, NetworkConfig networkConfig, IPeerFactory peerFactoryInit)
+        public Server(ILoggerFactory loggerFactory, NetworkConfig networkConfig, Func<IPeer> peerFactoryInit)
         {
             _logger = loggerFactory.CreateLogger<Server>();
             _cfg = networkConfig;
@@ -49,7 +48,7 @@ namespace NeoSharp.Core.Network
                 IPAddress.TryParse(ipStr, out ipAddr);
                 IPEndPoint ipEP = new IPEndPoint(ipAddr, port + i);
 
-                IPeer newPeer = _peerFactory.Create();
+                IPeer newPeer = _peerFactory();
                 newPeer.Connect(ipEP, _nonce);
             }
         }

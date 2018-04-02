@@ -1,6 +1,4 @@
-﻿using NeoSharp.Client.DI;
-using NeoSharp.Core.DI;
-using NeoSharp.Core.Network.DI;
+﻿using NeoSharp.Application.DI;
 using SimpleInjector;
 
 namespace NeoSharp.Application
@@ -11,7 +9,8 @@ namespace NeoSharp.Application
         {
             container = new Container();
 
-            CorePackage.RegisterServices(container);            
+            ConfigurationPackage.RegisterServices(container);
+            LoggingPackage.RegisterServices(container);
             ClientPackage.RegisterServices(container);            
             NetworkPackage.RegisterServices(container);
 

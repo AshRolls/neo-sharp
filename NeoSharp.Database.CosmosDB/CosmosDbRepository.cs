@@ -1,6 +1,7 @@
 ﻿using System;
+using NeoSharp.Core.Persistence;
 
-namespace NeoSharp.Core.Database.Repositories
+namespace NeoSharp.Persistence.CosmosDB
 {
     public class CosmosDbRepository : IRepository
     {
