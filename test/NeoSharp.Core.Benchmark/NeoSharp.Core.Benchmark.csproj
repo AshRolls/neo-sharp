@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NeoSharp.Core\NeoSharp.Core.csproj" />
+    <ProjectReference Include="..\..\src\NeoSharp.Core\NeoSharp.Core.csproj" />
   </ItemGroup>
 
 </Project>
