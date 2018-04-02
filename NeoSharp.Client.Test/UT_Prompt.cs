@@ -1,9 +1,10 @@
 using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
+using NeoSharp.Application.Client;
 using NeoSharp.Core.Network;
 
-namespace NeoSharp.Client.Test
+namespace NeoSharp.Application.Test
 {
     [TestClass]
     public class UT_Prompt

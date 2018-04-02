@@ -1,4 +1,4 @@
-﻿namespace NeoSharp.Client
+﻿namespace NeoSharp.Application.Client
 {
     public interface IConsoleWriter
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using NeoSharp.Core.Network;
 
-namespace NeoSharp.Client
+namespace NeoSharp.Application.Client
 {
     public class Prompt : IPrompt
     {

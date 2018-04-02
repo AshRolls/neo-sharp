@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace NeoSharp.Client
+namespace NeoSharp.Application.Client
 {
     public class ConsoleWriter : IConsoleWriter
     {     
