@@ -2,6 +2,7 @@
 using Moq;
 using NeoSharp.Application.Client;
 using NeoSharp.TestHelpers;
+using FluentAssertions;
 
 namespace NeoSharp.Application.Test
 {
@@ -15,8 +16,8 @@ namespace NeoSharp.Application.Test
             // Act
             var clientManager = this.AutoMockContainer.Create<ClientManager>();
 
-            // Assert
-            Assert.IsInstanceOfType(clientManager, typeof(ClientManager));
+            // Assert            
+            clientManager.Should().BeOfType<ClientManager>();
         }
 
         [TestMethod]
