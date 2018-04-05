@@ -7,7 +7,7 @@ using FluentAssertions;
 namespace NeoSharp.Application.Test
 {
     [TestClass]
-    public class ClientManagerTests : TestBase
+    public class UT_ClientManager : TestBase
     {
         [TestMethod]
         public void Ctor_ConstructValidObject()
