@@ -55,7 +55,7 @@ namespace NeoSharp.Application.Test
         }
 
         [TestMethod]
-        public void RunClient_MultupleArguments_MultipleArgumentsAreUsedInStartPrompt()
+        public void RunClient_MultipleArguments_MultipleArgumentsAreUsedInStartPrompt()
         {
             // Arrange
             var expectedParameters = new string[] { "City", "of", "Zion" };
