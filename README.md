@@ -28,7 +28,9 @@
 
 neo-sharp is a new node implementation created with the intention of using modern software engineering practices to improve code quality, testability, modularity, and readability without sacrificing speed of execution.
 
-neo-sharp is not aimed at adding new features.
+Stage one of neo-sharp is to have a fully compliant implementation.
+
+Stage two of neo-sharp is to experiment with performance improvements to the neo protocols (consensus, network, vm).
 
 # Projects
 
@@ -38,9 +40,9 @@ neo-sharp is not aimed at adding new features.
 	* Persistence - Database based persistence
 	* Network - Neo p2p protocol
 
-# Short term TODO
+# TODO
 
-Feedback on structure, particularly with regard to the dependency injection patterns and the intended goal of modularity between projects. Once satisfied, move onto implementation of network protocol.
+We are currently working on porting the `network` and `persistence` layers of the existing neo project into the neo-sharp structure.
 
 # Contributing
 
